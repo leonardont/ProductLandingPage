@@ -1,0 +1,387 @@
+.nav-link {
+    float: left;
+    border: 1px solid black;
+    font-family: "Acme", Arial;
+    z-index: 11;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -webkit-user-drag: none;
+    -ms-user-select: none;
+    border-radius: 10px;
+}
+
+ul {
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    border: 1px solid black;
+    z-index: 10;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -webkit-user-drag: none;
+    -ms-user-select: none;
+    padding: 8px 8px;
+}
+
+.nav-link a {
+    display: block;
+    color: black;
+    background-color: #FFCD58;
+    text-align: center;
+    padding: 10px 12px;
+    text-decoration: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -webkit-user-drag: none;
+    -ms-user-select: none;
+    border-radius: 10px;
+    transition-duration: 0.3s;
+}
+
+.nav-link a:hover {
+    background-color: #FF9636;
+    border-radius: 10px;
+}
+
+.nav-link a:active {
+    background-color: white;
+    border-radius: 10px;
+}
+
+#header-img {
+    margin: 100px auto auto 25%;
+    width: 50%;
+    max-width: 100%;
+    height: auto;
+    filter: invert(100%);
+    z-index: 2;
+    padding-bottom: 500px;
+    position: absolute;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -webkit-user-drag: none;
+    -ms-user-select: none;
+}
+
+#bg-img {
+    z-index: 1;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    max-width: 100%;
+    height: auto;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+body {
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+#epicgameslogo {
+   height: 45px;
+   width: 43px;
+   position: absolute;
+   top: 0;
+   left: 0;
+   z-index: 12;
+   padding-top: 5px;
+   padding-left: 10px;
+   user-select: none;
+   -moz-user-select: none;
+   -webkit-user-select: none;
+   -webkit-user-drag: none;
+   -ms-user-select: none;
+}
+
+li:first-child {
+    justify-content: start;
+}
+
+#newsletter {
+    margin-right: 23px;
+}
+
+#about-game {
+    margin-right: 20px;
+}
+
+#downloadnow {
+    margin-right: 20px;
+}
+
+.aboutgame-div {
+    width: 75%;
+    border: 10px solid #FF5C4D;
+    margin-left: auto;
+    margin-top: -30px;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 150px 350px;
+    gap: 0px 0px;
+    grid-template-areas:
+      "about-title about-title"
+      "about-desc about-vid";
+    justify-items: center;
+    align-items: center;
+    z-index: 3;
+    position: relative;
+    padding-top: auto;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    color: black;
+    background-image: linear-gradient(#FFCD58, #FF9636);
+    text-align: center;
+    height: auto;
+    max-width: 100%;
+}
+
+.about-title {
+    grid-area: about-title;
+    font-size: 35px;
+    font-family: "Acme", Arial;
+    text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+}
+
+#photo-desc {
+    position: absolute;
+    z-index: 4;
+    max-width: 100%;
+    height: auto;
+    top: 17%;
+    left: 9%;
+    transform: scale(1.1);
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+.about-desc {
+    grid-area: about-desc;
+    font-size: 20px;
+    font-family: "Acme", Arial;
+    position: relative;
+    z-index: 5;
+    text-shadow: 1px 0 0 #fff, -1px 0 0 #fff, 0 1px 0 #fff, 0 -1px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+    letter-spacing: 1px;
+    max-width: 100%;
+    height: auto;
+}
+
+.about-vid {
+    grid-area: about-vid;
+}
+
+#download-div {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    border: 10px solid black;
+    width: 50%;
+    margin-left: 23%;
+    margin-top: 3%;
+    padding-bottom: 80px;
+    padding-top: 10px;
+    border-color: #1D741B;
+    background-image: linear-gradient(#D2FBA4, #88CA5E);
+    position: relative;
+    z-index: 6;
+}
+
+#dl-title {
+    font-family: "Acme", Arial;
+    font-size: 80px;
+    max-width: 100%;
+    height: auto;
+    padding-bottom: 40px;
+    text-shadow: 1px 0 0 #fff, -1px 0 0 #fff, 0 1px 0 #fff, 0 -1px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+    position: relative;
+    z-index: 8;
+}
+
+#dl-button {
+    background-color: #FCC0C5;
+    border: 1px solid black;
+    color: black;
+    padding: 30px 30px;
+    text-align: center;
+    display: inline-block;
+    font-size: 40px;
+    font-family: "Acme", Arial;
+    text-shadow: 1px 0 0 #fff, -1px 0 0 #fff, 0 1px 0 #fff, 0 -1px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+    transition-duration: 0.3s;
+    border-radius: 15px;
+    z-index: 9;
+    position: relative;
+}
+
+#dl-button:hover {
+    background-color: #F582A8;
+}
+
+#dl-button:active {
+    background-color: white;
+}
+
+#photo-dl {
+    max-width: 100%;
+    height: auto;
+    position: absolute;
+    width: 55%;
+    top: -10.5%;
+    left: 63%;
+    z-index: 7;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+#photo-dl2 {
+    max-width: 100%;
+    height: auto;
+    position: absolute;
+    width: 55%;
+    top: -10.5%;
+    left: -18%;
+    z-index: 7;
+    transform: scaleX(-1);
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+#newsletter-div {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    border: 10px solid black;
+    width: 65%;
+    margin-left: 16%;
+    margin-top: 3%;
+    padding-bottom: 80px;
+    padding-top: 10px;
+    border-color: #3A5673;
+    background-image: linear-gradient(#AAF1F5, #51B9CD);
+    position: relative;
+    z-index: 13;
+    text-align: center;
+}
+
+#newstitle {
+    font-family: "Acme", Arial;
+    font-size: 70px;
+    max-width: 100%;
+    height: auto;
+    padding-bottom: 0px;
+    text-shadow: 1px 0 0 #fff, -1px 0 0 #fff, 0 1px 0 #fff, 0 -1px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+    position: relative;
+    z-index: 14;
+}
+
+#newsdesc {
+    font-family: "Acme", Arial;
+    font-size: 35px;
+    max-width: 100%;
+    text-align: center;
+    margin-top: 0px;
+    height: auto;
+    padding-bottom: 10px;
+    text-shadow: 1px 0 0 #fff, -1px 0 0 #fff, 0 1px 0 #fff, 0 -1px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+    position: relative;
+    z-index: 15;
+}
+
+#labelemail {
+    font-family: "Acme", Arial;
+    font-size: 25px;
+    max-width: 100%;
+    text-align: center;
+    margin-top: 0px;
+    height: auto;
+    text-shadow: 1px 0 0 #fff, -1px 0 0 #fff, 0 1px 0 #fff, 0 -1px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+    position: relative;
+    z-index: 16;
+}
+
+#email {
+    max-width: 100%;
+    height: auto;
+    padding: 3px 10px;
+}
+
+#submit {
+    margin-top: 30px;
+    background-color: #87ACA3;
+    border: 1px solid black;
+    color: black;
+    padding: 15px 15px;
+    text-align: center;
+    display: inline-block;
+    font-size: 30px;
+    font-family: "Acme", Arial;
+    text-shadow: 1px 0 0 #fff, -1px 0 0 #fff, 0 1px 0 #fff, 0 -1px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+    transition-duration: 0.3s;
+    border-radius: 15px;
+    z-index: 9;
+    position: relative;
+}
+
+#submit:hover {
+    background-color: #2B7C85;
+}
+
+#submit:active {
+    background-color: white;
+}
+
+#page-end {
+    text-align: center;
+    font-family: "Acme", Arial;
+    font-size: 20px;
+}
+
+br {
+    text-align: center;
+}
+
+footer {
+    font-family: Garamond, Arial;
+    margin: 30px auto auto auto;
+    background-color: white;
+    text-align: center;
+}
+
+#footerlicense {
+    margin-bottom: 10px;
+}
+
+#footername {
+    margin-top: 10px;
+}
